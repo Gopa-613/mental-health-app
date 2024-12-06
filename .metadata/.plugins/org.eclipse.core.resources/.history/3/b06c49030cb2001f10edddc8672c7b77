@@ -1,0 +1,247 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #85A98F;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+header .login-button {
+    background-color: white;
+    color: #007bff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header .login-button:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+/* Welcome Section */
+.welcome-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #eef2f6;
+    border-bottom: 1px solid #ccc;
+}
+
+.welcome-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.welcome-section p {
+    font-size: 1.2em;
+    margin-top: 0;
+}
+
+/* Features Section */
+.features-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px 10px;
+    gap: 20px;
+}
+
+.feature {
+    text-align: center;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.feature img {
+    max-width: 80px;
+    margin-bottom: 10px;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+/* Centered Form Section */
+.auth-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.form-container {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    color: #333;
+}
+
+.form-container form {
+    margin-bottom: 10px;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.form-button:hover {
+    background-color: #0056b3;
+}
+
+.form-link {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.form-link a {
+    color: #007bff;
+    font-weight: bold;
+}
+
+.form-link a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    font-size: 0.9em;
+}
+
+
+/* Responsive Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+
+table th {
+    background-color: #f4f4f9;
+}
+
+@media (max-width: 600px) {
+    table {
+        font-size: 0.9em;
+    }
+    table th, table td {
+        padding: 5px;
+    }
+}
+
+

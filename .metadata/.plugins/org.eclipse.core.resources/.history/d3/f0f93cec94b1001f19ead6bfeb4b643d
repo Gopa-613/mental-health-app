@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Find Therapists</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Mental Health App</h1>
+            <a href="/login" class="login-button">Login</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="therapist-section">
+            <h2>Find Your Therapist</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Phone</th>
+                        <th>Location</th>
+                        <th>Fee</th>
+                        <th>Discount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr th:each="therapist : ${therapists}">
+                        <td th:text="${therapist.name}"></td>
+                        <td th:text="${therapist.phone}"></td>
+                        <td th:text="${therapist.location}"></td>
+                        <td th:text="${therapist.fee}"></td>
+                        <td th:text="${therapist.discount}"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Mental Health App. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

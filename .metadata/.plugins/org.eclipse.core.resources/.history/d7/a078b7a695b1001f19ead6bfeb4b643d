@@ -1,0 +1,20 @@
+package com.example.demo.service;
+import com.example.demo.entity.Therapist;
+import com.example.demo.repository.TherapistRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+
+@Service
+public class TherapistService {
+
+    @Autowired
+    private TherapistRepository therapistRepository;
+    @GetMapping("/test")
+    @ResponseBody
+    // Method to get all therapists from the database
+    public List<Therapist> getAllTherapists() {
+        return therapistRepository.findAll();
+    }
+}
